@@ -144,10 +144,9 @@ def go_rules_dependencies():
         name = "com_github_gogo_protobuf",
         remote = "https://github.com/gogo/protobuf",
         # v1.3.0 (latest) as of 2019-10-05
-        commit = "0ca988a254f991240804bf9821f3450d87ccbb1b",
-        shallow_since = "1567336231 +0200",
-        patches = ["@io_bazel_rules_go//third_party:com_github_gogo_protobuf-gazelle.patch"],
+        commit = "5628607bb4c51c3157aacc3a50f0ab707582b805",
         patch_args = ["-p1"],
+        patches = ["@io_bazel_rules_go//third_party:com_github_gogo_protobuf-gazelle.patch"],
         # gazelle args: -go_prefix github.com/gogo/protobuf -proto legacy
     )
 
